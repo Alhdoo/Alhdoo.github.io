@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="./md.css">
+</head>
+<body style="align-items: center">
+<div id="gallery">
+    <img src="./assets/images/station-meteo.png" alt="Meteo" style="width: 100%">
+</div>
+
+<div id="description"></div>
+<script>
+    document.getElementById('description').innerHTML =
+        marked.parse('# Station Météo\n' +
+            '\n' +
+            'La Station Météo est un projet d\'IoT réalisé en duo avec un collègue de classe qui utilise différents capteurs tels que :\n' +
+            '\n' +
+            '- Thermomètre\n' +
+            '- Capteur d\'humidité\n' +
+            '- Capteur de vent (vitesse et direction)\n' +
+            '- Pluviomètre\n' +
+            '- Sonde de pression\n' +
+            '\n' +
+            'Les données sont ensuite récupérées et affichées sur une unique page d\'accueil. La case à gauche affiche les données les plus récentes et les 4 petites affichent les statistiques par jour sur les 4 derniers jours.\n' +
+            '\n' +
+            'Il y a également des graphiques qui affichent les statistiques pour les 15 derniers jours d\'humidité et de température.\n' +
+            '\n' +
+            'De plus, il est possible de se connecter. Une fois connecté, l\'utilisateur aura la possibilité de choisir une température de seuil. Lorsque cette température est dépassée, un petit beeper situé sur la station météo avec tous les capteurs se mettra à sonner.\n' +
+            '\n' +
+            'Outils et technologies utilisées :\n' +
+            '- HTML\n' +
+            '- ESP32\n' +
+            '- Symfony 6.4\n' +
+            '- PHP 8\n' +
+            '- Bootstrap 5\n' +
+            '- SCSS\n' +
+            '- Arduino\n' +
+            '- PHPStorm\n' +
+            '- SQLite\n' +
+            '- JavaScript (chartJS)\n' +
+            '- Git (GitHub)\n'
+        );
+</script>
+</body>
+</html>

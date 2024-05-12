@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="./md.css">
+</head>
+<body>
+<div id="gallery">
+    <img src="./assets/images/snitcher/snitcher.png" alt="Snitcher" style="width: 100%">
+    <img src="./assets/images/snitcher/add_comment.png" alt="Snitcher" style="width: 40%">
+    <img src="./assets/images/snitcher/statistique.png" alt="Snitcher" style="width: 100%">
+</div>
+
+<div id="description"></div>
+<script>
+    document.getElementById('description').innerHTML =
+        marked.parse('# Snitcher\n' +
+            '\n' +
+            'Snitcher est un projet réalisé en duo avec un collègue de classe permettant de mettre des avis sur les autres usagers de la route en les identifiant via leur plaque d\'immatriculation.\n' +
+            '\n' +
+            '## Page d\'accueil\n' +
+            '\n' +
+            'Sur la page d\'accueil du site, il est possible de voir les derniers avis récemment postés par les autres utilisateurs. Il est également possible, sur la gauche, de trier les avis selon différents critères. En haut, on retrouve un bouton pour ajouter un avis directement depuis l\'accueil. De plus, il est possible de saisir une plaque d\'immatriculation spécifique dans la barre de recherche pour rechercher une plaque particulière.\n' +
+            '\n' +
+            '## Page statistiques\n' +
+            '\n' +
+            'La page statistiques permet de visualiser différentes données sous forme de tableau. Ces données sont récupérées à partir des différents avis et commentaires postés par les utilisateurs.\n' +
+            '\n' +
+            'Technologies utilisées :\n' +
+            '- JavaScript\n' +
+            '- PHP 8\n' +
+            '- Symfony 6.4\n' +
+            '- Bootstrap 5\n' +
+            '- SCSS\n' +
+            '- HTML\n' +
+            '- MySQL\n' +
+            '- Git (GitHub)\n'
+        );
+</script>
+</body>
+</html>

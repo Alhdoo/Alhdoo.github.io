@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="./md.css">
+</head>
+<body style="align-items: center">
+<div id="gallery">
+    <img src="./assets/images/api/logo.svg" alt="Snitcher">
+</div>
+
+<div id="description"></div>
+<script>
+    document.getElementById('description').innerHTML =
+        marked.parse('# API pour application mobile\n' +
+            '\n' +
+            'Dans le cadre de notre projet de dernière année, nous avons dû reprendre un projet existant pour le refaire ou l\'améliorer.\n' +
+            '\n' +
+            'Un de nos professeurs nous a donc donné un des projets de son entreprise : une API pour leur application mobile, une application utilisée par l\'entreprise DMG ROSCO qui conçoit des projecteurs LED utilisés, par exemple, dans le cinéma.\n' +
+            '\n' +
+            'Nous avons dû refaire l\'API de l\'application qui était vieillissante en PHP vanilla. Nous avons opté pour le framework Spring Boot en Java en raison de sa popularité et de sa présence importante actuellement, afin que le projet soit maintenable le plus longtemps possible.\n' +
+            '\n' +
+            'J\'ai réalisé de nombreuses routes en back en utilisant principalement les méthodes POST et GET, ainsi que des fonctionnalités telles que l\'upload de fichiers et les données multipartes, etc. Ce projet a joué un rôle important dans ma troisième année étant donné qu\'il s\'est étendu sur 5 mois et m\'a permis de découvrir le framework Spring Boot.\n' +
+            '\n' +
+            'Malheureusement, je ne peux pas partager de code, car le projet est utilisé par une entreprise actuellement et je ne peux pas le montrer.\n' +
+            '\n' +
+            'Technologies utilisées :\n' +
+            '- Java\n' +
+            '- Spring Boot\n' +
+            '- Postman\n' +
+            '- GitLab\n');
+</script>
+</body>
+</html>

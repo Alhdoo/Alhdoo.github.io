@@ -1,0 +1,109 @@
+@import "furtive-print";
+@import "furtive-typescale";
+@import "furtive-responsive-utils";
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300italic,300);
+
+:root {
+    --bg-body: hsl(0, 0%, 8%);
+    --bg-body2: hsl(0, 0%, 14%);
+    --accent: hsl(153, 71%, 59%);
+    --text1: hsl(0, 0%, 100%);
+    --text2: hsl(0, 0%, 85%);
+    --invalid: hsl(7, 100%, 68%);
+    --fs-18: 1.125rem;
+    --fs-88: 5.5rem;
+    --fs-72: 4.5rem;
+    --fs-40: 2.5rem;
+    --fs-48: 3rem;
+    --fs-36: 2.25rem;
+    --fs-32: 2rem;
+    --fs-24: 1.5rem;
+    --fs-20: 1.25rem;
+    --container: 69.375rem;
+    --transition: 250ms ease-in-out;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 18px; /* Changed from 100% to 18px */
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-body);
+    color: var(--text1);
+    font-family: 'Merriweather', Georgia, serif; /* Changed from 'Space Grotesk', sans-serif to 'Merriweather', Georgia, serif */
+    font-size: var(--fs-18);
+    line-height: 1.56;
+    max-width: 100%; /* Added */
+    display: flex; /* Added */
+    flex-direction: row-reverse; /* Added */
+    justify-content: space-between;
+}
+
+/* === A bit of a gross hack so we can have bleeding divs/blockquotes. */
+p,
+*:not(div):not(img):not(body):not(html):not(li):not(blockquote):not(p) {
+    margin: 1rem auto 1rem;
+    max-width: 36rem;
+    padding: .25rem;
+}
+
+div {
+    width: 100%;
+}
+
+blockquote p {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 1rem auto 1rem;
+    max-width: 48rem;
+}
+
+li {
+    margin-left: 2rem;
+}
+
+/* Counteract the specificity of the gross *:not() chain. */
+h1 {
+    padding: 4rem 0 !important;
+}
+
+/*  === End gross hack */
+
+p {
+    height: auto;
+    line-height: 1.45;
+}
+
+pre, code {
+    font-family: Menlo, Monaco, "Courier New", monospace
+}
+
+pre {
+    background-color: #fafafa;
+    font-size: .8rem;
+    overflow-x: scroll;
+    padding: 1.125em;
+}
+
+a,
+a:visited {
+    color: #3498db;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #2980b9;
+}
+
+#description {
+    width: 40vw;
+}
+
+#gallery {
+    width: 60vw;
+
+}
